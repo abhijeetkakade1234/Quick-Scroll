@@ -31,4 +31,4 @@ Quick Scroll is a simple Chrome extension that allows you to quickly navigate to
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
