@@ -35,3 +35,7 @@ Quick Scroll is a simple Chrome extension that allows you to quickly navigate to
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Flowchart
+
+<img src="flowchart.png" alt="FlowChart" height="1500"/>
