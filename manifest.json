@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Scroll to Top or Bottom", 
+    "version": "1.0", 
+    "description": "Scroll to the top of the page on single click and to the bottom on double click.", 
+    "permissions": ["activeTab", "scripting"], 
+    "background": {
+      "service_worker": "background.js" 
+    },
+    "action": {
+      "default_icon": { 
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    }
+  }  
