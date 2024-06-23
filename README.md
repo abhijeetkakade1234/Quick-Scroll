@@ -1,4 +1,7 @@
-# Quick Scroll
+<p align="center">
+  <img src="icon.png" alt="Quick Scroll" height="200"/><br>
+  <b>CodeQuick ScrollNap</b>
+</p>
 
 Quick Scroll is a simple Chrome extension that allows you to quickly navigate to the top or bottom of a webpage with just a single click or double click. 
 
