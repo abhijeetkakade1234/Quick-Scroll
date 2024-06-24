@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="icon.png" alt="Quick Scroll" height="200"/><br>
+  <img src="img/icon.png" alt="Quick Scroll" height="200"/><br>
   <b>Quick Scroll</b>
 </p>
 
@@ -28,9 +28,6 @@ Quick Scroll is a simple Chrome extension that allows you to quickly navigate to
 
 - Quick Scroll is compatible with any Chromium-based browser, including Google Chrome, Microsoft Edge, Brave, and Opera.
 
-## Demo
-
-![Quick Scroll Demo](demo.gif)
 
 ## License
 
@@ -38,4 +35,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Flowchart
 
-<img src="flowchart.png" alt="FlowChart" height="1500"/>
+<img src="img/flowchart.png" alt="FlowChart" height="1500"/>
