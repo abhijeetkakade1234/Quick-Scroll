@@ -28,6 +28,9 @@ Quick Scroll is a simple Chrome extension that allows you to quickly navigate to
 
 - Quick Scroll is compatible with any Chromium-based browser, including Google Chrome, Microsoft Edge, Brave, and Opera.
 
+## Demo
+
+<img src="img/demo.gif" alt="Demo" height="600"/>
 
 ## License
 
