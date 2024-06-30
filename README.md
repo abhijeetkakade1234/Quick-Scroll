@@ -14,7 +14,7 @@ Quick Scroll is a simple Chrome extension that allows you to quickly navigate to
 
 ### From the Chrome Web Store
 
-1. Go to the [Quick Scroll extension page on the Chrome Web Store](#).
+1. Go to the [Quick Scroll extension page on the Chrome Web Store](https://chromewebstore.google.com/detail/quick-scroll/idffbgckggkngblpdmobfknajodlcbhk).
 2. Click "Add to Chrome" to install the extension.
 
 ## Usage
