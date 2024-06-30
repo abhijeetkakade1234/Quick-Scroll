@@ -1,37 +1,44 @@
-// Variable to hold the timeout for click detection
-let clickTimeout; 
+let lastClickTime = 0;
+const doubleClickDelay = 300; // milliseconds
 
-
-/**
- * Add a listener for clicks on the extension icon
- * @param {Object} tab - The current tab object
- */
-chrome.action.onClicked.addListener(function(tab) { 
-    if (clickTimeout) {
-        clearTimeout(clickTimeout);
-        scrollToBottom();
-        clickTimeout = null; // Reset the timeout
-    } else {
-        scrollToTop();
-        clickTimeout = setTimeout(() => {
-            clickTimeout = null; // Reset the timeout after a delay
-        }, 300); // 300ms timeout to detect double-click
-    }
+chrome.action.onClicked.addListener((tab) => {
+  const currentTime = new Date().getTime();
+  
+  if (currentTime - lastClickTime < doubleClickDelay) {
+    // Double click detected, scroll to bottom
+    chrome.scripting.executeScript({
+      target: { tabId: tab.id },
+      function: scrollToBottom
+    });
+  } else {
+    // Single click, scroll to top
+    chrome.scripting.executeScript({
+      target: { tabId: tab.id },
+      function: scrollToTop
+    });
+  }
+  
+  lastClickTime = currentTime;
 });
 
 /**
- * Function to scroll to the top of the page
+ * Scrolls the window to the top of the page smoothly.
+ *
  */
 function scrollToTop() {
-  // Scroll to the top of the page
-  window.scrollTo(0, 0);
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
 }
 
 /**
- * Function to scroll to the bottom of the page
+ * Scrolls the window to the bottom of the page smoothly.
+ *
  */
 function scrollToBottom() {
-  // Scroll to the bottom of the page
-  window.scrollTo(0, document.body.scrollHeight);
+  window.scrollTo({
+    top: document.documentElement.scrollHeight,
+    behavior: 'smooth'
+  });
 }
-
